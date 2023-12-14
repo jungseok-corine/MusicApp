@@ -13,6 +13,10 @@
 		999AF9082B2897CF00A8C96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999AF9062B2897CF00A8C96A /* Main.storyboard */; };
 		999AF90A2B2897D000A8C96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999AF9092B2897D000A8C96A /* Assets.xcassets */; };
 		999AF90D2B2897D000A8C96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999AF90B2B2897D000A8C96A /* LaunchScreen.storyboard */; };
+		99D0F58E2B2B02560001836B /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0F58C2B2B02560001836B /* MusicCell.swift */; };
+		99D0F58F2B2B02560001836B /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99D0F58D2B2B02560001836B /* MusicCell.xib */; };
+		99D0F5922B2B1D610001836B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0F5912B2B1D610001836B /* NetworkManager.swift */; };
+		99D0F5942B2B1DFD0001836B /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0F5932B2B1DFD0001836B /* Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		999AF9092B2897D000A8C96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		999AF90C2B2897D000A8C96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999AF90E2B2897D000A8C96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99D0F58C2B2B02560001836B /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		99D0F58D2B2B02560001836B /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		99D0F5912B2B1D610001836B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		99D0F5932B2B1DFD0001836B /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				999AF9002B2897CF00A8C96A /* AppDelegate.swift */,
 				999AF9022B2897CF00A8C96A /* SceneDelegate.swift */,
-				999AF9042B2897CF00A8C96A /* ViewController.swift */,
-				999AF9062B2897CF00A8C96A /* Main.storyboard */,
+				99D0F5902B2B1D340001836B /* Networking */,
+				99D0F58B2B2B02330001836B /* Models */,
+				99D0F58A2B2B022D0001836B /* Views */,
+				99D0F5892B2B02250001836B /* Controllers */,
 				999AF9092B2897D000A8C96A /* Assets.xcassets */,
 				999AF90B2B2897D000A8C96A /* LaunchScreen.storyboard */,
 				999AF90E2B2897D000A8C96A /* Info.plist */,
 			);
 			path = MusicApp;
+			sourceTree = "<group>";
+		};
+		99D0F5892B2B02250001836B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				999AF9042B2897CF00A8C96A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		99D0F58A2B2B022D0001836B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				999AF9062B2897CF00A8C96A /* Main.storyboard */,
+				99D0F58C2B2B02560001836B /* MusicCell.swift */,
+				99D0F58D2B2B02560001836B /* MusicCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99D0F58B2B2B02330001836B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99D0F5932B2B1DFD0001836B /* Music.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99D0F5902B2B1D340001836B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				99D0F5912B2B1D610001836B /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +172,7 @@
 				999AF90D2B2897D000A8C96A /* LaunchScreen.storyboard in Resources */,
 				999AF90A2B2897D000A8C96A /* Assets.xcassets in Resources */,
 				999AF9082B2897CF00A8C96A /* Main.storyboard in Resources */,
+				99D0F58F2B2B02560001836B /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +185,10 @@
 			files = (
 				999AF9052B2897CF00A8C96A /* ViewController.swift in Sources */,
 				999AF9012B2897CF00A8C96A /* AppDelegate.swift in Sources */,
+				99D0F5922B2B1D610001836B /* NetworkManager.swift in Sources */,
 				999AF9032B2897CF00A8C96A /* SceneDelegate.swift in Sources */,
+				99D0F58E2B2B02560001836B /* MusicCell.swift in Sources */,
+				99D0F5942B2B1DFD0001836B /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
